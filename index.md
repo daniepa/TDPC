@@ -3,46 +3,43 @@
 ## 1 Come funziona il WEB?
 ![web](https://user-images.githubusercontent.com/29860929/144933977-ec9fae88-ccc9-40f5-a067-ef1ddcbb65f1.jpg)
 
-[vedi immagine del funzionamento del web](https://daniepa.github.io/TDPC/web.jpg)
-
 I **client** sono tutti quei dispositivi che dispongono di un browser di una connessione ad internet.
 
 I **server** sono dei computer sparsi per il mondo, molto performanti e costantementi collegati alla rete sui quali sono presenti i vari siti internet. 
 
 Il **web** (o internet) sta in mezzo a questi due elementi.
 
-**"Come avviene la magia che ogni giorno ci permette di visualizzare i siti internet sui nostri clients?"**
+**"Come avviene la magia?"**
 
-Quando sul nostro client apriamo il browser e digitiamo un indirizzo, ad esempio:
+Sul nostro client apriamo il browser e digitiamo un indirizzo:
 ```markdown
     https://www.google.com
 ```
-stiamo inviando una **request** (o richiesta) nella quale:
-- chiediamo ad internet di trovare il server che ospita quel sito (dominio);
-- passiamo un metodo di tipo GET (vogliamo che il server ci invii delle risorse);
+Inviamo una **request** (o richiesta) che attraverso internet arriva al server.
+La richiesta contiene:
+- **dominio** google.com;
+- **method o action** di tipo GET se vogliamo che il server ci invii delle risorse;
 
-Il compito del server è quello di gestire tutte le request che gli arrivano.
-Una volta che prende in carico la nostra richiesta, invia al nostro client una **response** (o risposta) contenente:
+Il server **gestisce tutte le request** che gli arrivano.
+Prende in carico la nostra richiesta e invia al nostro client una **response** (o risposta)
+La risposta contiene:
 - un **codice di stato** (ad esempio 200 significa "OK" oppure 404 "Not found");
-- un pacchetto contenente le **risorse** che abbiamo richiesto. Tipicamente sono file di tipo:
+- un pacchetto contenente le **risorse** che abbiamo richiesto. Tipicamente sono file:
   - HTML;
   - CSS;
   - JavaScript;
 
-Ed eccoci alla magia:
-Il browser installato sul nostro client è un programma che al suo interno ha un **interprete**. I suoi compiti sono:
-- prendere in pasto i file con estensione .html, .css e .js;
-- interpretarli fornendo all'utente finale una **visualizzazione del contenuto** a lui comprensibile.
+La magia:
+Il browser sul nostro client ha un **interprete**:
+- prende in pasto i file .html, .css e .js inviati dal server;
+- li interpreta: fornendo all'utente finale una **visualizzazione del contenuto** a lui comprensibile.
 
 ## 2.1 HTML
 
-HTML significa **H**yper**T**ext **M**arkup **L**anguage ovvero Linguaggio di markup per ipertesti.
-Dalla nascita di internet e dell'HTML, la vera innovazione era proproi quella di poter navigare fra le pagine attraverso delle scritte clickabili (**collegamenti ipertestuali**).
-Linguaggio di markup significa che l'HTML non è un linguaggio di programmazione, ma basato su markup ovvero dei marcatori (o etichette, o tag).
-Dal browser Chrome su qualsiasi pagina web, digitando CTRL+U (o visualizza sorgente pagina) è possibile visualizzare il codice HTML di quella pagina.
-Ad un primo sguardo può sembrare un codice incomprensibile.
-Noteremo come il codice sarà pieno di simboli maggiore e minore (< e >).
-I **tag o marcatori** sono proprio delle parole chiave contenute fra questi simboli, dette anche parentesi angolari.
+**H**yper**T**ext **M**arkup **L**anguage = Linguaggio di markup per ipertesti.
+Anni 90: innovazione di internet e HTML: poter navigare fra le pagine (risorse) attraverso i **collegamenti ipertestuali**.
+Linguaggio di markup: basato su markup (o marcatori, o etichette, o tag).
+I **tag o marcatori** sono parole chiave racchiuse da parentesi angolari: <nomeTagEsempio>
 
 ## 2.2 I tag HTML
 
@@ -57,20 +54,13 @@ Risultato:
     <nomeDelTag> Contenuto del tag </nomeDelTag>
 ```
 
-Dobbiamo immaginare tutti gli elementi che vediamo in una pagina web come dei blocchi.
-Immaginate ad esempio un post di Instagram:
-La pagina intera è il blocco principale;
-Al suo interno partendo dall'alto è presente un primo blocco orizzontale contenente:
-- l'immagine circolare dell'utente che ha pubblicato il post;
-- alla sua destra il nome;
-- sulla destra i tre puntini che permettono di aprire il menù;
-Il secondo blocca occupa gran parte dell'immagine e contiene la foto;
-Il terzo blocco contiene gli elemnti:
-- sulla sinistra le icone 'cuore', 'commenta' e 'invia';
-- sulla destra l'icona 'salva nella raccolta'
-e così via...
+Tutto ciò che vediamo in una pagina web è un elemento.
+Spesso un elemento contiene altri elemti.
+Si tratta di una struttura annidata (come le scatole cinesi).
+Esempio: un menù di navigazione che al suo interno contiene un immagine e un elenco di voci.
+Esempio2: una pagina con tre colonne; nella prima e terza sono presenti articoli; la centrale è ulteriormente divisa in due sezioni;
+    la prima contiene un titolo; la seconda un'immagine.
 
-E' una struttura ad albero o a scatola cinese con un elemento contenuto nel successivo che a sua volta contiene elementi.
 La struttura dei file HTML è proprio così: tag che contengono altri tag che contengono altri tag...
 
 Esempio:
@@ -83,29 +73,32 @@ Esempio:
         </tag3>
     </tag1>
 ```
-**NB: è importante mantenere i tag "indentati" correttamente ovvero spaziare con un rientro i tag contenuti in altri tag.
-In questo modo si vede visivamente dove si apre un tag e dove viene ghiuso diverse righe più giù.**
+**NB: Per non "perdersi nei meandri del codice", bisogna tenere "indentati" i tag.
+Significa spaziare con un rientro i tag contenuti in altri tag.
+Così vediamo a prima vista dove si apre un tag e dove viene chiuso diverse righe più giù.**
 
 **Casi particolari**
 
-Esistono alcuni tag che che non necessitano del tag di chiusura e possono scriversi in 2 diversi metodi:
-Esempio:
+Alcuni tag nonhanno il tag di chiusura. Possono essere scritti:
 ```markdown
-    <tagSenzaChiusura1>
-    ...
+    <tagSenzaChiusura1>   
+```
+Oppure:
+        ```markdown
     <tagSenzaChiusura2 />    
 ```
 
 ## 2.3 La struttura base della pagina HTML
 **<!DOCTYPE html>**
-Questo è un tag particolare che deve essere messo ad inizio documento. Dice all'interprete che il documento che si appresta a leggere è di tipo HTML.
+Questo è un tag particolare che deve essere messo ad inizio documento.
+Dice all'interprete che il documento che si appresta a leggere è di tipo HTML.
 
 **<html>...</html>**
 E' il tag che contiene tutta la pagina web. Dopo questo tag non ci dovrebbe più essere nulla.
-
-All'interno di questo tag sono presenti due tag distinti
+All'interno di questo tag sono presenti due tag: **head** e **body**
+        
 **<head>...</head>**
-Contiene tutto ciò che non è visibile all'utente nella pagina. Contiene altri tagche servono a fare caricare correttamnete delle risorse aggiuntive.
+I tag che contoiene non sono visibili all'utente. Servono a fare caricare correttamnete delle risorse aggiuntive.
 
 **<body>...</body>**
 Contiene tutto il contenuto visibile all'utente della pagina web.
