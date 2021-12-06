@@ -1,6 +1,6 @@
 ## 1. Come funziona il WEB?
 
-[Il web](url)
+[Il web](https://daniepa.github.io/TDPC/web.jpg)
 
 I **client** sono tutti quei dispositivi che dispongono di un browser di una connessione ad internet.
 
