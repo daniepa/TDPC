@@ -1,6 +1,7 @@
 **Concetti base di HTML, CSS e Javascript per chi vuole diventare sviluppatore**
 
 ## 1 Come funziona il WEB?
+![web](https://user-images.githubusercontent.com/29860929/144933977-ec9fae88-ccc9-40f5-a067-ef1ddcbb65f1.jpg)
 
 [vedi immagine del funzionamento del web](https://daniepa.github.io/TDPC/web.jpg)
 
@@ -18,12 +19,12 @@ Quando sul nostro client apriamo il browser e digitiamo un indirizzo, ad esempio
 ```
 stiamo inviando una **request** (o richiesta) nella quale:
 - chiediamo ad internet di trovare il server che ospita quel sito (dominio);
-- passiamo un metodo di tipo GET (vogliamo che ci tornino indietro delle risorse);
+- passiamo un metodo di tipo GET (vogliamo che il server ci invii delle risorse);
 
 Il compito del server è quello di gestire tutte le request che gli arrivano.
-Una volta che prende in carico la nostra richiesta invia al nostro client una **response** (o risposta) contenente:
+Una volta che prende in carico la nostra richiesta, invia al nostro client una **response** (o risposta) contenente:
 - un **codice di stato** (ad esempio 200 significa "OK" oppure 404 "Not found");
-- un pacchetto contenente le **risorse** che abbiamo richiesto contenente che tipicamente sono file di tipo:
+- un pacchetto contenente le **risorse** che abbiamo richiesto. Tipicamente sono file di tipo:
   - HTML;
   - CSS;
   - JavaScript;
@@ -58,15 +59,15 @@ Risultato:
 
 Dobbiamo immaginare tutti gli elementi che vediamo in una pagina web come dei blocchi.
 Immaginate ad esempio un post di Instagram:
-- la pagina intera è il blocco principale;
-        - all'interno partendo dall'alto è presente un primo blocco orizzontale contenente:
-            - l'immagine circolare dell'utente che ha pubblicato il post;
-            - alla sua destra il nome;
-            - sulla destra i tre puntini che permettono di aprire il menù;
-        - il secondo blocca occupa gran parte dell'immagine e contiene la foto;
-        - il terzo blocco contiene gli elemnti:
-            - sulla sinistra le icone 'cuore', 'commenta' e 'invia';
-            - sulla destra l'icona 'salva nella raccolta'
+La pagina intera è il blocco principale;
+Al suo interno partendo dall'alto è presente un primo blocco orizzontale contenente:
+- l'immagine circolare dell'utente che ha pubblicato il post;
+- alla sua destra il nome;
+- sulla destra i tre puntini che permettono di aprire il menù;
+Il secondo blocca occupa gran parte dell'immagine e contiene la foto;
+Il terzo blocco contiene gli elemnti:
+- sulla sinistra le icone 'cuore', 'commenta' e 'invia';
+- sulla destra l'icona 'salva nella raccolta'
 e così via...
 
 E' una struttura ad albero o a scatola cinese con un elemento contenuto nel successivo che a sua volta contiene elementi.
@@ -109,14 +110,15 @@ Contiene tutto ciò che non è visibile all'utente nella pagina. Contiene altri 
 **<body>...</body>**
 Contiene tutto il contenuto visibile all'utente della pagina web.
 ```markdown
-    <html>
-        <head>
-            ...
-        </head>
-        <body>
-            ...
-        </body>
-    </html>
+    <!DOCTYPE html>
+        <html>
+            <head>
+                ...
+            </head>
+            <body>
+                ...
+            </body>
+        </html>
 ```
 
 
