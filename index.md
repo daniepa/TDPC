@@ -1,36 +1,31 @@
-## Welcome to GitHub Pages
+## 1. Come funziona il WEB?
 
-You can use the [editor on GitHub](https://github.com/daniepa/TDPC/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+[Il web](url)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+I **client** sono tutti quei dispositivi che dispongono di un browser di una connessione ad internet.
 
-### Markdown
+I **server** sono dei computer sparsi per il mondo, molto performanti e costantementi collegati alla rete sui quali sono presenti i vari siti internet. 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Il **web** (o internet) sta in mezzo a questi due elemnti.
 
+**"Come avviene la magia che ogni giorno ci permette di visualizzare i siti internet sui nostri clients?"**
+
+Quando sul nostro client apriamo il browser e digitiamo un indirizzo, ad esempio:
 ```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+    https://www.google.com
 ```
+stiamo inviando una **request** (o richiesta) nella quale:
+- chiediamo ad internet di trovare il server che ospita quel sito (dominio);
+- passiamo un metodo di tipo GET (vogliamo che ci tornino indietro delle risorse);
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+Il compito del server è quello di tutte le request che gli arrivano.
+Una volta che prende in carico la nostra richiesta invia al nostro client una **response** (o risposta) contenente:
+- un codice di stato (ad esempio 200 significa "OK" oppure 404 "Not found");
+- un pacchetto contenente le risorse che abbiamo richiesto contenente che tipicamente sono file di tipo:
+  - HTML;
+  - CSS;
+  - JavaScript;
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/daniepa/TDPC/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
 ### Support or Contact
 
