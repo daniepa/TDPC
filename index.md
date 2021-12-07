@@ -88,21 +88,21 @@ Oppure:
 ```
 
 ## 2.3 La struttura base della pagina HTML
-**<!DOCTYPE html>**
+**`<!DOCTYPE html>`**
 Questo è un tag particolare che deve essere messo ad inizio documento.
 Dice all'interprete che il documento che si appresta a leggere è di tipo HTML.
 
-**<html>...</html>**
+**`<html>...</html>`**
 E' il tag che contiene tutta la pagina web. Dopo questo tag non ci dovrebbe più essere nulla.
 All'interno di questo tag sono presenti due tag: **head** e **body**
         
-**<head>...</head>**
+**`<head>...</head>`**
 I tag che contoiene non sono visibili all'utente. Servono a fare caricare correttamnete delle risorse aggiuntive.
 
-**<title>...</title>**
+**`<title>...</title>`**
 Posizionare questo tag dentro il tag head. Il testo che inseriremo sarà visualizzato nella tab del browser.
         
-**<body>...</body>**
+**`<body>...</body>`**
 Contiene tutto il contenuto visibile all'utente della pagina web.
 ```markdown
     <!DOCTYPE html>
@@ -118,10 +118,10 @@ Contiene tutto il contenuto visibile all'utente della pagina web.
 ```
 
 ## 2.4 I tag header e paragraph
-**<h1>...</h1>**  
+**`<h1>...</h1>`**  
 Titolo di primo livello. Esistono i tag di header (intestazioni) da h1 ad h6 (dal più grande al più piccolo).
         
-**<p>...</p>**
+**`<p>...</p>`**
 Paragrafi. Il testo verrà formattato come paragrafi.
 Se nel codice andiamo a capo una o più volte, la modifica non si riflettarà nella pagina:
 questo perché **il computer non considera gli a capo** scritti nel nostro codice.
@@ -133,7 +133,7 @@ Il testo racchiuso in questi tag verrà ignorato dall'interprete del browser.
 Viene usato per inserire commenti utili nel codice.
         
 ## 2.5 break e horizontal rule.
-**<br />**
+**`<br />`**
 Dato che a codice non esiste "a capo", il tag break serve proprio a forzare **"un a capo"**.
 Ad esempio, usato dentro un paragrafo, il testo andrà a capo:
 ```markdown
@@ -148,8 +148,8 @@ Ad esempio, usato dentro un paragrafo, il testo andrà a capo:
     </p>
 ```
 
-**<hr />**
-Questo tag genera una linea orizzontale utile a diidere i contenuti della pagina web.    
+**`<hr />`**
+Questo tag genera una linea orizzontale utile a dividere i contenuti della pagina web.    
         
 ### Support or Contact
 
