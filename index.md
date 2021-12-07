@@ -117,7 +117,40 @@ Contiene tutto il contenuto visibile all'utente della pagina web.
         </html>
 ```
 
+## 2.4 I tag header e paragraph
+**<h1>...</h1>**  
+Titolo di primo livello. Esistono i tag di header (intestazioni) da h1 ad h6 (dal più grande al più piccolo).
+        
+**<p>...</p>**
+Paragrafi. Il testo verrà formattato come paragrafi.
+Se nel codice andiamo a capo una o più volte, la modifica non si riflettarà nella pagina:
+questo perché **il computer non considera gli a capo** scritti nel nostro codice.
+Aggiungendo un altro paragrafo però si noterà che fra i due paragrafi ci saràuna linea vuota.
+Il tag p (come il tag h) è un elemento di blocco: prima e dopo di esso verrà generata una linea vuota.
+        
+**`<!-- -->`**
+Il testo racchiuso in questi tag verrà ignorato dall'interprete del browser.
+Viene usato per inserire commenti utili nel codice.
+        
+## 2.5 break e horizontal rule.
+**<br />**
+Dato che a codice non esiste "a capo", il tag break serve proprio a forzare **"un a capo"**.
+Ad esempio, usato dentro un paragrafo, il testo andrà a capo:
+```markdown
+    <p>
+        Prima riga del primo paragrafo.
+        Questa seconda riga NON verrà scritta a capo.
+    </p>
+    <p>
+        Prima riga del secondo paragrafo
+        <br />
+        Questa seconda riga verrà scritta a capo! :)
+    </p>
+```
 
+**<hr />**
+Questo tag genera una linea orizzontale utile a diidere i contenuti della pagina web.    
+        
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
