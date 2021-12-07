@@ -97,7 +97,7 @@ E' il tag che contiene tutta la pagina web. Dopo questo tag non ci dovrebbe più
 All'interno di questo tag sono presenti due tag: **head** e **body**
         
 **`<head>...</head>`**
-I tag che contoiene non sono visibili all'utente. Servono a fare caricare correttamnete delle risorse aggiuntive.
+I tag che contiene non sono visibili all'utente. Servono a fare caricare correttamnete delle risorse aggiuntive.
 
 **`<title>...</title>`**
 Posizionare questo tag dentro il tag head. Il testo che inseriremo sarà visualizzato nella tab del browser.
