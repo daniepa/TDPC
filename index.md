@@ -117,7 +117,7 @@ Contiene tutto il contenuto visibile all'utente della pagina web.
         </html>
 ```
 
-## 2.4 I tag header e paragraph
+## 2.4 Nel body...header, paragraph, comments
 **`<h1>...</h1>`**  
 Titolo di primo livello. Esistono i tag di header (intestazioni) da h1 ad h6 (dal più grande al più piccolo).
         
@@ -150,6 +150,19 @@ Ad esempio, usato dentro un paragrafo, il testo andrà a capo:
 
 **`<hr />`**
 Questo tag genera una linea orizzontale utile a dividere i contenuti della pagina web.    
+
+## 2.6 tag per la formattazione.
+I due principali tag per la formattazione del testo sono:
+**`<strong>...<strong/>`**
+Trasforma contenuto in testo in graseetto.
+**`<em>...</em>`**
+Trasforma contenuto in testo in corsivo.
+```markdown
+    <p>
+        Sono <strong>Danilo</strong> e sono un <em>web developer</em>.
+    </p>
+```
+
         
 ### Support or Contact
 
