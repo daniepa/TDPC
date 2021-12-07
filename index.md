@@ -1,7 +1,6 @@
 **Concetti base di HTML, CSS e Javascript per chi vuole diventare sviluppatore**
 
 ## 1 Come funziona il WEB?
-![web](https://user-images.githubusercontent.com/29860929/144933977-ec9fae88-ccc9-40f5-a067-ef1ddcbb65f1.jpg)
 
 I **client** sono tutti quei dispositivi che dispongono di un browser di una connessione ad internet.
 
@@ -10,12 +9,12 @@ I **server** sono dei computer sparsi per il mondo, molto performanti e costante
 Il **web** (o internet) sta in mezzo a questi due elementi.
 
 **"Come avviene la magia?"**
-
+![web](https://user-images.githubusercontent.com/29860929/144933977-ec9fae88-ccc9-40f5-a067-ef1ddcbb65f1.jpg)
 Sul nostro client apriamo il browser e digitiamo un indirizzo:
 ```markdown
     https://www.google.com
 ```
-Inviamo una **request** (o richiesta) che attraverso internet arriva al server.
+Stiamo inviando una **request** (o richiesta) che attraverso internet arriva al server.
 La richiesta contiene:
 - **dominio** google.com;
 - **method o action** di tipo GET se vogliamo che il server ci invii delle risorse;
@@ -84,7 +83,7 @@ Alcuni tag nonhanno il tag di chiusura. Possono essere scritti:
     <tagSenzaChiusura1>   
 ```
 Oppure:
-        ```markdown
+```markdown
     <tagSenzaChiusura2 />    
 ```
 
