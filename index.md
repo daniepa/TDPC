@@ -99,12 +99,16 @@ All'interno di questo tag sono presenti due tag: **head** e **body**
 **<head>...</head>**
 I tag che contoiene non sono visibili all'utente. Servono a fare caricare correttamnete delle risorse aggiuntive.
 
+**<title>...</title>**
+Posizionare questo tag dentro il tag head. Il testo che inseriremo sarà visualizzato nella tab del browser.
+        
 **<body>...</body>**
 Contiene tutto il contenuto visibile all'utente della pagina web.
 ```markdown
     <!DOCTYPE html>
         <html>
             <head>
+                <title>La mia pagina web</title>
                 ...
             </head>
             <body>
