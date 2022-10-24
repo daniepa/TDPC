@@ -163,6 +163,18 @@ Trasforma contenuto in testo in corsivo.
     </p>
 ```
 
+## 2.7 tag div e span: contenitori generici.
+Il tag div ed il tag span sono dei contenitore generici.
+La differenza fra i due è che div è un tag di blocco mentre span è un tag inline
+**`<div>...<div/>`**
+**`<span>...<span/>`**
+Anche lui al suo interno può contenere altri tag
+```markdown
+    <div>
+        <p>ciao, sono un <span>paragrafo</span> contenuto in un div.</p>
+    </div>
+```
+
         
 ### Support or Contact
 
